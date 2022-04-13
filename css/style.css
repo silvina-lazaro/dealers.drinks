@@ -141,16 +141,35 @@
 
 /*Fin estilos galería*/
 /*Inicio estilos espirituosas*/
+.inicio--galeria1 {
+    padding: 1%;
+    align-items: center;
+    background-color: #212128;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat (3 1fr);
+    grid-template-rows: 1;
+    height: auto;
+}
+.inicio--galeria1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.inicio--galeria1 :nth-child(1) {
+    grid-column: 1 / 2;
+}
+.inicio--galeria1 :nth-child(2) {
+    grid-column: 2 / 3;
+}
+.inicio--galeria1 :nth-child(3) {
+    grid-column: 3 / 4;
+}
 .espirituosas {
-    display: flex;
-    flex-direction: column;
     margin: 10px;
     padding: 5px;
-    color: #30333A;
     height: auto;
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
-    text-align: left;
     background-image: url(../dealers-drinks-images/entramado.jpg);
    }
 
@@ -163,25 +182,60 @@
     text-align: center;
 }
 
-.espirituosas--definicion {
+.espirituosas p {
+    margin: 10px;
+    text-align: justify;
     color: #30333A;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: 300;
 }
+.inicio--galeria2 {
+    padding: 1%;
+    align-items: center;
+    background-color: #212128;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat (3 1fr);
+    grid-template-rows: 1;
+    height: auto;
+}
+.inicio--galeria2 img {
+    width: 100%;
+    height: 100%;
+}
 
-.espirituosas h3 {
+.inicio--galeria2 :nth-child(1) {
+    grid-column: 1 / 2;
+}
+.inicio--galeria2 :nth-child(2) {
+    grid-column: 2 / 3;
+}
+.inicio--galeria2 :nth-child(3) {
+    grid-column: 3 / 4;
+}
+.espirituosas--historia {
+    margin: 20px 15px 20px 15px;
+    padding: 5px;
+    height: auto;
+    font-family: 'Lato', sans-serif;
+    background-image: url(../dealers-drinks-images/entramado.jpg);
+}
+.espirituosas--historia h3 {
     margin: 10px 0;
+    text-align: center;
     color: #30333A;
     font-family: 'Lato', sans-serif;
     font-size: 25px;
 }
 
-.espirituosas--historia {
+.espirituosas--historia p {
+    margin: 10px;
     color: #30333A;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
+    text-align: justify;
 }
 
 
@@ -196,6 +250,7 @@
 
 /*Inicio estilos footer*/
 .piepag {
+    margin: 20px 0 0 0;
     background-color: #212128;
     display: flex;
     flex-direction: row;
@@ -221,14 +276,47 @@
 /*Inicio estilos recetas*/
 
 .recetas h1 {
-    padding: 20px;
-    color: #000624;
+    margin: 15px;
+    padding: 5%;
+    background-image: url(../dealers-drinks-images/entramado.jpg);
+    text-align: center;
+    align-items: center;
+    height: 30vh;
+    color: #a28e58;
     font-family: 'Lato', sans-serif;
     font-size: 32px;
-    text-align: center;
-
+    text-transform: uppercase;
+    font-weight: bold;
 }
-
+.tom-collins {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1;
+}
+.tom-collins img {
+    height: 100%;
+    width: 100%;
+    animation: backInDown;
+    animation-duration: 2s;
+}
+.tom-collins :nth-child(1) {
+    grid-column: 1/2;
+    padding: 4%;
+}
+.tom-collins :nth-child(2) {
+    grid-column: 2/3;
+}
+.tom-collins :nth-child(3) {
+    grid-column: 3/4;
+    margin: 10px;
+    padding: 10%;
+    color: #30333A;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left
+}
 
 
 /*Fin estilos recetas*/
