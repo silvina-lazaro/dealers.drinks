@@ -391,3 +391,15 @@
     transform: rotateY(360deg);
 }
 /*Fin estilos historia*/
+/*Inicio estilos productos*/
+.productos h1 {
+    margin: 25px auto;
+    height: 10rem;
+    padding: 3rem;
+    font-size: 32px;
+    font-family: 'Lato', sans-serif;
+    background-image: url(../dealers-drinks-images/entramado.jpg);
+    color: #a28e58;
+    text-align: center;
+    text-transform: uppercase;
+ }
