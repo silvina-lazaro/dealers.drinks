@@ -5,48 +5,45 @@
 }
 
 /*Inicio estilos menú de navegación*/
-.encabezado {
-    margin: -20px auto 5px auto;
+
+.encabezado-fechas {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #FFFFFF;
     background-image: url(../dealers-drinks-images/encabezado-blanco.png);
-    height: 40vh;
+    height: 10rem;
     background-position: center;
-    background-size: 70%;
+    background-size: 60%;
     background-repeat: no-repeat;
     align-items: flex-end;
-}
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 800px;
-    background-color: #30333A;
-    color: #FFFFFF;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    list-style: none;
-    text-decoration: none;
-    list-style: none;
-}
+    nav {
+        margin-top: 9rem;
+        font-family: 'Lato', sans-serif;
+        color: #212128;
+        text-decoration: none;
 
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: #212128;
 
-.menu a {
-    margin: 5px 20px;
-    background-color: #30333A;
-    color: #FFFFFF;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    text-decoration: none;
-    justify-content: space-evenly;
-}
-.menu a:hover {
-    filter: invert(95%);
-}
+            li {
+                list-style-type: none;
+
+                a {
+                    margin: 0 3rem 0 3rem;
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+            }
+
+        }
+    }
+
+    }
 
 /*Fin estilos menú de navegación*/
 
@@ -57,48 +54,30 @@
     margin: 20px;
     text-align: center;
     align-items: flex-end;
-    background-image: url(../dealers-drinks-images/entramado.jpg);
-    color: #212128;
-}
 
-.inicio__somos h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 40px;
-    width: 100%;
-    align-items: flex-end;
-}
+    & h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5rem;
+        color: #30333A;
+        width: 100%;
+        align-items: flex-end;
+    }
 
-.inicio__somos p {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    width: 100%;
-    align-items: left;
+    & p {
+        color: #30333A;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.25rem;
+        width: 100%;
+        align-items: left;
+    }
 }
 
 /*Fin estilos visión Dealers*/
 
-/*Inicio estilos galería*/
+/*Inicio estilos galería1*/
 
 
-
-.galeria-1 .container {
-    padding: 1%;
-    align-items: center;
-    background-color: #212128;
-    display: grid;
-    gap: 2px;
-    grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: 1;
-    height: auto;
-}
-.galeria-1 .container img {
-    width: 100%;
-    height: 100%;
-}
-.galeria-1 .container img:hover { 
-    filter: grayscale(1);
-}
-/*Fin estilos galería*/
+/*Fin estilos galería1*/
 /*Inicio estilos espirituosas*/
 .espirituosas {
     margin: 10px;
@@ -106,46 +85,48 @@
     height: auto;
     font-family: 'Lato', sans-serif;
     background-image: url(../dealers-drinks-images/entramado.jpg);
-   }
 
-.espirituosas h2 {
-    margin: 15px 0;
-    padding-top: 10px;
-    color: #30333A;
-    font-family: 'Lato', sans-serif;
-    font-size: 30px;
-    text-align: center;
+
+    h2 {
+        margin: 15px 0;
+        padding-top: 10px;
+        color: #30333A;
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    p {
+        margin: 10px;
+        text-align: justify;
+        color: #30333A;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+    }
 }
 
-.espirituosas p {
-    margin: 10px;
-    text-align: justify;
-    color: #30333A;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-}
-/*Fin estilos espirituosas*/
-/*Inicio estilos galería*/
-.galeria-2 .container {
+.galeria2 {
     padding: 1%;
     align-items: center;
     background-color: #212128;
     display: grid;
     gap: 2px;
-    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-columns: repeat (3 1fr);
     grid-template-rows: 1;
     height: auto;
+
+    .container {
+        img {
+            width: 100%;
+
+            & img:hover {
+                filter: grayscale(1);
+            }
+        }
+    }
 }
-.galeria-2 .container img {
-    width: 100%;
-    height: 100%;
-}
-.galeria-2 .container img:hover { 
-    filter: grayscale(1);
-}
-/*Fin estilos galería*/
-/*Inicio espirituosas historia*/
+
 .espirituosas--historia {
     margin: 20px 15px 20px 15px;
     padding: 5px;
@@ -171,13 +152,17 @@
 }
 
 
+/*Fin estilos espirituosas*/
+
+
+
 /* este espacio es para darle forma a las listas*/
 
 
 
 
 /*Inicio estilos footer*/
-.piepag .container-fluid{
+.piepag {
     background-color: #212128;
     display: flex;
     flex-direction: row;
@@ -186,7 +171,7 @@
 
 }
 
-.piepag .container-fluid .img-fluid {
+.piepag-logo {
     filter: opacity(70%);
     width: 25%;
     padding: 1rem;
@@ -238,26 +223,26 @@
     text-transform: uppercase;
     font-weight: bold;
 }
-#tom-collins {
+.tom-collins {
     align-content: center;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1;
 }
-#tom-collins img {
+.tom-collins img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#tom-collins :nth-child(1) {
+.tom-collins :nth-child(1) {
     grid-column: 1/2;
     padding: 4%;
 }
-#tom-collins :nth-child(2) {
+.tom-collins :nth-child(2) {
     grid-column: 2/3;
 }
-#tom-collins :nth-child(3) {
+.tom-collins :nth-child(3) {
     grid-column: 3/4;
     margin: 10px;
     padding: 10%;
@@ -268,26 +253,26 @@
     font-weight: 300;
     text-align: left
 }
-#negroni {
+.negroni {
     align-content: center;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1;
 }
-#negroni img {
+.negroni img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#negroni :nth-child(1) {
+.negroni :nth-child(1) {
     grid-column: 1/2;
     padding: 4%;
 }
-#negroni :nth-child(2) {
+.negroni :nth-child(2) {
     grid-column: 2/3;
 }
-#negroni :nth-child(3) {
+.negroni :nth-child(3) {
     grid-column: 3/4;
     margin: 10px;
     padding: 10%;
@@ -298,27 +283,27 @@
     font-weight: 300;
     text-align: left
 }
-#voodoo {
+.voodoo {
     align-content: center;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1;
 }
-#voodoo img {
+.voodoo img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#voodoo :nth-child(1) {
+.voodoo :nth-child(1) {
     grid-column: 1/2;
     padding: 4%;
 }
-#voodoo :nth-child(2) {
+.voodoo :nth-child(2) {
     grid-column: 2/3;
     overflow: hidden;
 }
-#voodoo :nth-child(3) {
+.voodoo :nth-child(3) {
     grid-column: 3/4;
     margin: 10px;
     padding: 10%;
@@ -329,26 +314,26 @@
     font-weight: 300;
     text-align: left
 }
-#long-island {
+.long-island {
     align-content: center;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1;
 }
-#long-island img {
+.long-island img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#long-island :nth-child(1) {
+.long-island :nth-child(1) {
     grid-column: 1/2;
     padding: 4%;
 }
-#long-island :nth-child(2) {
+.long-island :nth-child(2) {
     grid-column: 2/3;
 }
-#long-island :nth-child(3) {
+.long-island :nth-child(3) {
     grid-column: 3/4;
     margin: 10px;
     padding: 10%;
@@ -359,26 +344,26 @@
     font-weight: 300;
     text-align: left
 }
-#clarito {
+.clarito {
     align-content: center;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1;
 }
-#clarito img {
+.clarito img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#clarito :nth-child(1) {
+.clarito :nth-child(1) {
     grid-column: 1/2;
     padding: 4%;
 }
-#clarito :nth-child(2) {
+.clarito :nth-child(2) {
     grid-column: 2/3;
 }
-#clarito :nth-child(3) {
+.clarito :nth-child(3) {
     grid-column: 3/4;
     margin: 10px;
     padding: 10%;
@@ -389,26 +374,26 @@
     font-weight: 300;
     text-align: left
 }
-#boulevardier {
+.boulevardier {
     align-content: center;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1;
 }
-#boulevardier img {
+.boulevardier img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#boulevardier :nth-child(1) {
+.boulevardier :nth-child(1) {
     grid-column: 1/2;
     padding: 4%;
 }
-#boulevardier :nth-child(2) {
+.boulevardier :nth-child(2) {
     grid-column: 2/3;
 }
-#boulevardier :nth-child(3) {
+.boulevardier :nth-child(3) {
     grid-column: 3/4;
     margin: 10px;
     padding: 10%;
@@ -419,26 +404,26 @@
     font-weight: 300;
     text-align: left
 }
-#daiquiri {
+.daiquiri {
     align-content: center;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1;
 }
-#daiquiri img {
+.daiquiri img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#daiquiri :nth-child(1) {
+.daiquiri :nth-child(1) {
     grid-column: 1/2;
     padding: 4%;
 }
-#daiquiri :nth-child(2) {
+.daiquiri :nth-child(2) {
     grid-column: 2/3;
 }
-#daiquiri :nth-child(3) {
+.daiquiri :nth-child(3) {
     grid-column: 3/4;
     margin: 10px;
     padding: 10%;
@@ -449,26 +434,26 @@
     font-weight: 300;
     text-align: left
 }
-#caipiroska {
+.caipiroska {
     align-content: center;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1;
 }
-#caipiroska img {
+.caipiroska img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#caipiroska :nth-child(1) {
+.caipiroska :nth-child(1) {
     grid-column: 1/2;
     padding: 4%;
 }
-#caipiroska :nth-child(2) {
+.caipiroska :nth-child(2) {
     grid-column: 2/3;
 }
-#caipiroska :nth-child(3) {
+.caipiroska :nth-child(3) {
     grid-column: 3/4;
     margin: 10px;
     padding: 10%;
@@ -638,4 +623,48 @@
 #gin ul {
     list-style-type: none;
     margin-left: 5rem;
+}
+
+/*inicio estilo fechas*/
+.efemerides {
+    background-image: url(../dealers-drinks-images/entramado.jpg);
+    margin-top: 2rem;
+    height: 5rem;
+    h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.5rem;
+        color: #212128;
+        text-align: center;
+    }
+    p {
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        color: #212128;
+        text-align: center;
+    }
+}
+.fechas {
+    background-image: url(../dealers-drinks-images/entramado.jpg);
+    font-family: 'Lato', sans-serif;
+    color: #212128;
+
+    h2 {
+        margin: 00.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        color: #a28e58;
+    }
+    h3 {
+        padding-left: 1.5rem;
+        color: #a28e58;
+        background-color: #212128;
+    }
+    p {
+        margin: 0.5rem;
+        padding: 1rem;
+        font-size: 1rem;
+        color: #212128;
+    }
 }
