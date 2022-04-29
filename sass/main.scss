@@ -626,23 +626,34 @@
 }
 
 /*inicio estilo fechas*/
+/*mixins*/
+@mixin fecha {
+    color: #212128;
+    text-align: center;
+    padding: 1rem;
+    }
 .efemerides {
-    background-image: url(../dealers-drinks-images/entramado.jpg);
+    background-image: url(../dealers-drinks-images/fechas-encabezado.jpg);
     margin-top: 2rem;
-    height: 5rem;
+    height: 8rem;
+    filter: opacity(80%);
     h1 {
         font-family: 'Lato', sans-serif;
-        font-size: 1.5rem;
-        color: #212128;
-        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        @include fecha;
     }
     p {
         font-family: 'Lato', sans-serif;
-        font-size: 1rem;
-        color: #212128;
-        text-align: center;
+        font-size: 1.5rem;
+        @include fecha;
     }
 }
+/*map*/
+$colores: (
+    base: #a28e58,
+    fondo: #212128
+);
 .fechas {
     background-image: url(../dealers-drinks-images/entramado.jpg);
     font-family: 'Lato', sans-serif;
@@ -654,7 +665,7 @@
         font-size: 1.5rem;
         font-weight: bold;
         text-align: center;
-        color: #a28e58;
+        color: map-get($map: $colores , $key: base );
     }
     h3 {
         padding-left: 1.5rem;
@@ -667,4 +678,30 @@
         font-size: 1rem;
         color: #212128;
     }
+}
+/*extend*/
+.piepag__fechas {
+    width: 100%;
+    overflow: hidden;
+}
+.piepag__fechas {
+    h3 {
+    @extend .piepag__fechas;
+    color: map-get($map: $colores, $key: fondo );
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    filter: opacity(70%);
+}
+}
+.piepag__fechas {
+    .container {
+        display: flex;
+        flex-direction: row;
+
+        h3 {
+            padding-top: 5rem;
+            text-align: center;
+        }
+    }
+
 }
