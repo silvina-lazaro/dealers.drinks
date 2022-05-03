@@ -194,12 +194,12 @@
 .piepag-redes {
     padding-right: 0.5rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 2fr 1fr 1fr;
 }
 .piepag-redes h4{
     padding-right: 1rem;
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
     grid-row: 3 / 4;
     color: #a28e58;
     font-family: 'Lato', sans-serif;
@@ -215,6 +215,11 @@
 .bi-bi-instagram {
     padding-bottom: 0.5rem;
     grid-column: 4 / 5;
+    grid-row: 4 / 5;
+}
+.bi-bi-whatsapp {
+    padding-bottom: 0.5rem;
+    grid-column: 5 / 6;
     grid-row: 4 / 5;
 }
 /*Fin estilos footer*/
@@ -480,8 +485,8 @@
     text-align: left
 }
 .receta__footer {
-    padding: 1rem;
     align-items: center;
+    padding: 0.5rem;
 }
 
 .receta__footer img {
