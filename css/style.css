@@ -479,6 +479,12 @@
     font-weight: 300;
     text-align: left
 }
+.receta__footer {
+    align-items: center;
+}
+.receta__footer img {
+    width: 100%;
+}
 
 /*Fin estilos recetas*/
 
