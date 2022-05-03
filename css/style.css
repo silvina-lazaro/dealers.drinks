@@ -480,8 +480,10 @@
     text-align: left
 }
 .receta__footer {
+    padding: 1rem;
     align-items: center;
 }
+
 .receta__footer img {
     width: 100%;
 }
