@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dealer´s Drinks - Recetas</title>
-        <meta name="description" content="Recetas de cocteles, recetas de tragos">
-        <meta name="keywords" content="trago, cocktail, coctel, bartender, whisky, aperitivo, gin, vodka, ron, licor">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&display=swap"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealer´s Drinks - Recetas</title>
+    <meta name="description" content="Recetas de cocteles, recetas de tragos">
+    <meta name="keywords" content="trago, cocktail, coctel, bartender, whisky, aperitivo, gin, vodka, ron, licor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
 
 <body>
-    <header class="encabezado">
+    <header class="container-fluid">
         <!--inicio del menú de navegación-->
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./historia.html">La historia del Dealer</a></li>
-                <li><a href="./recetas.html">Recetas</a></li>
-                <li><a href="./efemerides.html" target="Blank">Efemérides</a></li>
-            </ul>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../dealers-drinks-images/logo-azul-redondo-sinfondo.png" alt="Dealers Drinks">
+                    </a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./recetas.html">RECETAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./historia.html">LA HISTORIA DEL DEALER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./efemerides.html">EFEMÉRIDES</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <!--Fin del menú de navegación-->
     </header>
-    <!--fin del menú de navegación-->
 
     <section class="recetas">
         <h1>Las recetas del Dealer</h1>
@@ -41,7 +66,7 @@
             <div><img src="../dealers-drinks-images/tom-collins-ingredientes.png"
                     alt="tom collins tom-collins-ingredientes"></div>
             <div id="preparacion-tom-collins">
-                <h2>PREPARACIÓN</h2>
+                <h2>TOM COLLINS: PREPARACIÓN</h2>
                 <p>En un vaso de trago largo colmado de hielo agregamos el gin, el jugo de limón, el almíbar e
                     integramos bien los ingredientes con una cuchara. Agregamos la soda hasta completar el vaso y
                     volvemos a integrar. Por último decoramos con una rodaja de limón y una cereza.</p>
@@ -53,7 +78,7 @@
             <div><img src="../dealers-drinks-images/receta-negroni-foto.png" alt="negroni"></div>
             <div><img src="../dealers-drinks-images/negroni-ingredientes.png" alt="negroni-ingredientes"></div>
             <div class="preparacion-negroni">
-                <h2>PREPARACIÓN</h2>
+                <h2>NEGRONI: PREPARACIÓN</h2>
                 <P>En un vaso de trago corto colmado de hielo, agregamos las medidas de cada bebida e integramos bien
                     con una cuchara, por último le sumamos la rodaja de naranja. Este cóctel es ideal prepararlo
                     refrescado, en un vaso de compensación pero si no contamos con esta herramienta podemos hacerlo
@@ -65,7 +90,7 @@
             <div><img src="../dealers-drinks-images/receta-voodoo-foto.jpg" alt="voodoo"></div>
             <div><img src="../dealers-drinks-images/voodoo-ingredientes.jpg" alt="voodo-ingtredientes"></div>
             <div>
-                <h2>PREPARACIÓN</h2>
+                <h2>VOODOO: PREPARACIÓN</h2>
                 <P>
                     En un vaso de trago largo lleno de hielo, agregamos el ron, el vermut y un toque de jugo de limón
                     recién exprimido. Completamos con jugo de manzana.
@@ -78,6 +103,7 @@
             <div><img src="../dealers-drinks-images/receta-long-island-foto.png" alt="long-island-iced-tea"></div>
             <div><img src="../dealers-drinks-images/long-island-ingredientes.png" alt="long-island-ingtredientes"></div>
             <div>
+                <h2>LONG ISLAND ICED TEA:</h2>
                 <h2>PREPARACIÓN</h2>
                 <P>
                     En un vaso de trago largo lleno de hielo, agregamos el ron, el vermut y un toque de jugo de limón
@@ -146,20 +172,9 @@
             <img src="../dealers-drinks-images/recetas-footer.jpg" alt="recetas-faciles">
         </footer>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

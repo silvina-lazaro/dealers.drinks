@@ -5,74 +5,33 @@
 }
 
 /*Inicio estilos menú de navegación*/
-.encabezado {
-    margin: -20px auto 5px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #FFFFFF;
-    background-image: url(../dealers-drinks-images/encabezado-blanco.png);
-    height: 40vh;
-    background-position: center;
-    background-size: 70%;
-    background-repeat: no-repeat;
-    align-items: flex-end;
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 800px;
-    background-color: #30333A;
-    color: #FFFFFF;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    list-style: none;
-    text-decoration: none;
-    list-style: none;
-}
 
 
-.menu a {
-    margin: 5px 20px;
-    background-color: #30333A;
-    color: #FFFFFF;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    text-decoration: none;
-    justify-content: space-evenly;
-}
-.menu a:hover {
-    filter: invert(95%);
-}
+
 
 /*Fin estilos menú de navegación*/
 
 /*Inicio estilos visión Dealers*/
-
+.inicio {
+    margin-top: 5.5rem;
+    padding-top: 1.5rem;
+}
 .inicio__somos {
-    padding: 20px;
-    margin: 20px;
+    padding: 1.5rem;
+    margin: 1.5rem;
     text-align: center;
-    align-items: flex-end;
     background-image: url(../dealers-drinks-images/entramado.jpg);
-    color: #212128;
+    color: #a28e58;
 }
 
 .inicio__somos h1 {
     font-family: 'Lato', sans-serif;
-    font-size: 40px;
-    width: 100%;
-    align-items: flex-end;
+    font-size: 3rem;
 }
 
 .inicio__somos p {
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    width: 100%;
-    align-items: left;
+    font-size: 1.5rem;
 }
 
 /*Fin estilos visión Dealers*/
@@ -177,7 +136,11 @@
 
 
 /*Inicio estilos footer*/
+.piepag {
+    overflow: hidden;
+}
 .piepag .container-fluid{
+    height: 10rem;
     background-color: #212128;
     display: flex;
     flex-direction: row;
@@ -188,11 +151,10 @@
 
 .piepag .container-fluid .img-fluid {
     filter: opacity(70%);
-    width: 25%;
-    padding: 1rem;
 }
 .piepag-redes {
     padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 2fr 1fr 1fr;
@@ -241,6 +203,9 @@
     font-family: 'Lato', sans-serif;
     font-size: 32px;
     text-transform: uppercase;
+    font-weight: bold;
+}
+.recetas h2 {
     font-weight: bold;
 }
 #tom-collins {
@@ -588,7 +553,7 @@
     width: 100%;
     filter: grayscale(0.4);
 }
-.whisky-lista {
+#whisky-lista {
     height: 4rem;
     margin: 1.5rem 5rem 0 5rem;
     padding: 0.5rem;
@@ -624,7 +589,7 @@
     list-style-type: none;
     margin: 1rem;
 }
-.gin-lista {
+#gin-lista {
     height: 4rem;
     margin: 0 5rem 0 5rem;
     padding: 0.5rem;
@@ -653,10 +618,9 @@
     list-style-type: none;
     margin-left: 5rem;
 }
-.vodka-lista {
+#vodka-lista {
     height: 4rem;
-    margin: 0 5rem 0 5rem;
-    padding: 0.5rem;
+    margin-top: 5rem;
     font-size: 2.5rem;
     font-family: 'Lato', sans-serif;
     background-color: #212128;
@@ -664,7 +628,8 @@
     text-align: center;
 }
 #vodka {
-    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: grid;
     grid-template-columns: 2fr 3fr 3fr;
     gap: 1rem;
@@ -685,9 +650,9 @@
   #vodka ul li {
       padding: 0.3rem;
   }
-  .ron-lista {
+  #ron-lista {
     height: 4rem;
-    margin: 0 5rem 0 5rem;
+    margin-top: 3rem;
     padding: 0.5rem;
     font-size: 2.5rem;
     font-family: 'Lato', sans-serif;
@@ -720,9 +685,9 @@
 #ron ul li{
     padding: 1rem;
 }
-.varios-lista {
+#varios-lista {
     height: 4rem;
-    margin: 0 5rem 0 5rem;
+    margin: 3rem 0 3rem 0;
     padding: 0.5rem;
     font-size: 2.5rem;
     font-family: 'Lato', sans-serif;
@@ -731,10 +696,9 @@
     text-align: center;
 }
 #varios {
-    margin: 1rem;
+    width: 100%;
     display: grid;
     grid-template-columns: 2fr 3fr 3fr;
-    gap: 1rem;
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     color: #212128;
@@ -765,13 +729,13 @@
     text-align: center;
 }
 .efemerides h1 {
-    padding: 1rem;
+    padding-top: 1rem;
     font-size: 3rem;
     text-transform: uppercase;
 }
-.efemerides p{
+#fechas--importantes {
     font-size: 1.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 3rem;
 }
 .fechas {
     font-family: 'Lato', sans-serif;
@@ -798,13 +762,14 @@
 }
 .piepag__fechas .container{
     height: 10rem;
+    padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: 'Lato', sans-serif;
     align-items: center;
     overflow: hidden;
-    background-color: #fde2d6;
+    background-color: #212128;
 }
 .piepag__fechas .container h3 {
     height: auto;
