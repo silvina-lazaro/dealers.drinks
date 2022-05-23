@@ -4,18 +4,13 @@
     box-sizing: border-box;
 }
 
-/*Inicio estilos menú de navegación*/
-
-
-
-
-/*Fin estilos menú de navegación*/
 
 /*Inicio estilos visión Dealers*/
 .inicio {
     margin-top: 5.5rem;
     padding-top: 1.5rem;
 }
+
 .inicio__somos {
     padding: 1.5rem;
     margin: 1.5rem;
@@ -50,13 +45,16 @@
     grid-template-rows: 1;
     height: auto;
 }
+
 .galeria-1 .container img {
     width: 100%;
     height: 100%;
 }
-.galeria-1 .container img:hover { 
+
+.galeria-1 .container img:hover {
     filter: grayscale(1);
 }
+
 /*Fin estilos galería*/
 /*Inicio estilos espirituosas*/
 .espirituosas {
@@ -65,7 +63,7 @@
     height: auto;
     font-family: 'Lato', sans-serif;
     background-image: url(../dealers-drinks-images/entramado.jpg);
-   }
+}
 
 .espirituosas h2 {
     margin: 15px 0;
@@ -84,6 +82,7 @@
     font-size: 18px;
     font-weight: 300;
 }
+
 /*Fin estilos espirituosas*/
 /*Inicio estilos galería*/
 .galeria-2 .container {
@@ -96,13 +95,16 @@
     grid-template-rows: 1;
     height: auto;
 }
+
 .galeria-2 .container img {
     width: 100%;
     height: 100%;
 }
-.galeria-2 .container img:hover { 
+
+.galeria-2 .container img:hover {
     filter: grayscale(1);
 }
+
 /*Fin estilos galería*/
 /*Inicio espirituosas historia*/
 .espirituosas--historia {
@@ -112,6 +114,7 @@
     font-family: 'Lato', sans-serif;
     background-image: url(../dealers-drinks-images/entramado.jpg);
 }
+
 .espirituosas--historia h3 {
     margin: 10px 0;
     text-align: center;
@@ -129,17 +132,12 @@
     text-align: justify;
 }
 
-
-/* este espacio es para darle forma a las listas*/
-
-
-
-
 /*Inicio estilos footer*/
 .piepag {
     overflow: hidden;
 }
-.piepag .container-fluid{
+
+.piepag .container-fluid {
     height: 10rem;
     background-color: #212128;
     display: flex;
@@ -152,38 +150,28 @@
 .piepag .container-fluid .img-fluid {
     filter: opacity(70%);
 }
+
 .piepag-redes {
     padding-right: 0.5rem;
     padding-bottom: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr 1fr 1fr;
-}
-.piepag-redes h4{
-    padding-right: 1rem;
-    grid-column: 1 / 6;
-    grid-row: 3 / 4;
-    color: #a28e58;
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase; 
-    font-size: 1.5rem;
-}
-.bi-bi-facebook {
-    padding-bottom: 0.5rem;
-    grid-column: 3 / 4;
-    grid-row: 4 / 5;
+
 }
 
-.bi-bi-instagram {
-    padding-bottom: 0.5rem;
-    grid-column: 4 / 5;
-    grid-row: 4 / 5;
+.piepag-redes h4 {
+    margin: 2rem 0 2rem 0;
+    color: #a28e58;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: right;
 }
-.bi-bi-whatsapp {
-    padding-bottom: 0.5rem;
-    grid-column: 5 / 6;
-    grid-row: 4 / 5;
+
+.piepag-redes a {
+    margin: 1rem 0 1rem 2rem;
+    padding-left: 3rem;
 }
+
+
 /*Fin estilos footer*/
 
 
@@ -191,264 +179,99 @@
 
 
 /*Inicio estilos recetas*/
+.recetas {
+    background-image: url(../dealers-drinks-images/entramado.jpg);
+    font-family: 'Lato', sans-serif;
+    color: #a28e58;
+}
 
 .recetas h1 {
-    margin: 15px;
-    padding: 5%;
-    background-image: url(../dealers-drinks-images/entramado.jpg);
+    margin-top: 2rem;
     text-align: center;
-    align-items: center;
-    height: 30vh;
-    color: #a28e58;
-    font-family: 'Lato', sans-serif;
-    font-size: 32px;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 3rem;
 }
-.recetas h2 {
-    font-weight: bold;
-}
-#tom-collins {
-    align-content: center;
+
+.recetas article {
+    overflow: hidden;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1;
+    grid-template-columns: repeat(auto-fit, minmax(3fr, 1fr));
 }
+
+.recetas article :nth-child(1) {
+    margin: 1.3rem 1rem 1.3rem 0.5rem;
+    padding: 1rem 0 1rem 0;
+    grid-column: 1 / 3;
+}
+
+.recetas article :nth-child(2) {
+    height: 100%;
+    width: 100%;
+    margin: 0 5rem 0 0.5rem;
+    padding: 1.5rem 2rem 1.5rem 0;
+    grid-column: 4 / 6;
+}
+
+.recetas article :nth-child(3) {
+    margin-top: 3rem;
+    grid-column: 6 / 9;
+}
+
 #tom-collins img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#tom-collins :nth-child(1) {
-    grid-column: 1/2;
-    padding: 4%;
-}
-#tom-collins :nth-child(2) {
-    grid-column: 2/3;
-}
-#tom-collins :nth-child(3) {
-    grid-column: 3/4;
-    margin: 10px;
-    padding: 10%;
-    background-image: url(../dealers-drinks-images/entramado.jpg);
-    color: #a28e58;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    text-align: left
-}
-#negroni {
-    align-content: center;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1;
-}
+
 #negroni img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#negroni :nth-child(1) {
-    grid-column: 1/2;
-    padding: 4%;
-}
-#negroni :nth-child(2) {
-    grid-column: 2/3;
-}
-#negroni :nth-child(3) {
-    grid-column: 3/4;
-    margin: 10px;
-    padding: 10%;
-    background-image: url(../dealers-drinks-images/entramado.jpg);
-    color: #a28e58;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    text-align: left
-}
-#voodoo {
-    align-content: center;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1;
-}
+
 #voodoo img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#voodoo :nth-child(1) {
-    grid-column: 1/2;
-    padding: 4%;
-}
-#voodoo :nth-child(2) {
-    grid-column: 2/3;
-    overflow: hidden;
-}
-#voodoo :nth-child(3) {
-    grid-column: 3/4;
-    margin: 10px;
-    padding: 10%;
-    background-image: url(../dealers-drinks-images/entramado.jpg);
-    color: #a28e58;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    text-align: left
-}
-#long-island {
-    align-content: center;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1;
-}
-#long-island img {
-    height: 100%;
-    width: 100%;
-    animation: backInDown;
-    animation-duration: 2s;
-}
-#long-island :nth-child(1) {
-    grid-column: 1/2;
-    padding: 4%;
-}
-#long-island :nth-child(2) {
-    grid-column: 2/3;
-}
-#long-island :nth-child(3) {
-    grid-column: 3/4;
-    margin: 10px;
-    padding: 10%;
-    background-image: url(../dealers-drinks-images/entramado.jpg);
-    color: #a28e58;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    text-align: left
-}
-#clarito {
-    align-content: center;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1;
-}
+
 #clarito img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#clarito :nth-child(1) {
-    grid-column: 1/2;
-    padding: 4%;
-}
-#clarito :nth-child(2) {
-    grid-column: 2/3;
-}
-#clarito :nth-child(3) {
-    grid-column: 3/4;
-    margin: 10px;
-    padding: 10%;
-    background-image: url(../dealers-drinks-images/entramado.jpg);
-    color: #a28e58;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    text-align: left
-}
-#boulevardier {
-    align-content: center;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1;
-}
+
 #boulevardier img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#boulevardier :nth-child(1) {
-    grid-column: 1/2;
-    padding: 4%;
+
+#long-island img {
+    height: 100%;
+    width: 100%;
+    animation: backInDown;
+    animation-duration: 2s;
 }
-#boulevardier :nth-child(2) {
-    grid-column: 2/3;
-}
-#boulevardier :nth-child(3) {
-    grid-column: 3/4;
-    margin: 10px;
-    padding: 10%;
-    background-image: url(../dealers-drinks-images/entramado.jpg);
-    color: #a28e58;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    text-align: left
-}
-#daiquiri {
-    align-content: center;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1;
-}
+
 #daiquiri img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#daiquiri :nth-child(1) {
-    grid-column: 1/2;
-    padding: 4%;
-}
-#daiquiri :nth-child(2) {
-    grid-column: 2/3;
-}
-#daiquiri :nth-child(3) {
-    grid-column: 3/4;
-    margin: 10px;
-    padding: 10%;
-    background-image: url(../dealers-drinks-images/entramado.jpg);
-    color: #a28e58;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    text-align: left
-}
-#caipiroska {
-    align-content: center;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1;
-}
+
 #caipiroska img {
     height: 100%;
     width: 100%;
     animation: backInDown;
     animation-duration: 2s;
 }
-#caipiroska :nth-child(1) {
-    grid-column: 1/2;
-    padding: 4%;
-}
-#caipiroska :nth-child(2) {
-    grid-column: 2/3;
-}
-#caipiroska :nth-child(3) {
-    grid-column: 3/4;
-    margin: 10px;
-    padding: 10%;
-    background-image: url(../dealers-drinks-images/entramado.jpg);
-    color: #a28e58;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    text-align: left
-}
+
 .receta__footer {
     align-items: center;
     padding: 0.5rem;
@@ -456,6 +279,21 @@
 
 .receta__footer img {
     width: 100%;
+}
+
+@media all and (max-width: 900px) {
+
+    #tom-collins-foto,
+    #negroni-foto,
+    #voodoo-foto,
+    #clarito-foto,
+    #boulevardier-foto,
+    #long-island-foto,
+    #daiquiri-foto,
+    #caipiroska-foto {
+        display: none;
+    }
+
 }
 
 /*Fin estilos recetas*/
@@ -490,6 +328,7 @@
     line-height: 40px;
     text-shadow: 1px 1px 1px lightgoldenrodyellow;
 }
+
 .dealer--galeria {
     background-color: #212128;
     display: grid;
@@ -529,6 +368,7 @@
 .dealer--galeria .dealer-6:hover {
     transform: rotateY(360deg);
 }
+
 /*Fin estilos historia*/
 /*Inicio estilos productos*/
 .productos h1 {
@@ -541,18 +381,21 @@
     color: #a28e58;
     text-align: center;
     text-transform: uppercase;
- }
+}
+
 .productos-iconos {
     display: grid;
     grid-template-rows: 1;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 2px;
 }
+
 .productos-iconos img {
     height: 100%;
     width: 100%;
     filter: grayscale(0.4);
 }
+
 #whisky-lista {
     height: 4rem;
     margin: 1.5rem 5rem 0 5rem;
@@ -563,6 +406,7 @@
     color: #a28e58;
     text-align: center;
 }
+
 #whisky {
     padding-top: 0.25rem;
     display: grid;
@@ -574,21 +418,25 @@
     text-align: left;
     background-image: url(../dealers-drinks-images/entramado.jpg);
 }
+
 #whisky img {
     width: 100%;
     background-color: #212128;
 }
+
 #whisky h3 {
-    margin-right: 3rem ;
+    margin-right: 3rem;
     padding: 0.5rem;
     font-family: 'Lato', sans-serif;
     color: #a28e58;
     font-weight: bold;
 }
+
 #whisky ul {
     list-style-type: none;
     margin: 1rem;
 }
+
 #gin-lista {
     height: 4rem;
     margin: 0 5rem 0 5rem;
@@ -599,6 +447,7 @@
     color: #a28e58;
     text-align: center;
 }
+
 #gin {
     margin: 1rem;
     display: grid;
@@ -610,14 +459,17 @@
     text-align: left;
     background-image: url(../dealers-drinks-images/entramado.jpg);
 }
+
 #gin img {
     padding-top: 1rem;
     width: 100%;
 }
+
 #gin ul {
     list-style-type: none;
     margin-left: 5rem;
 }
+
 #vodka-lista {
     height: 4rem;
     margin-top: 5rem;
@@ -627,6 +479,7 @@
     color: #a28e58;
     text-align: center;
 }
+
 #vodka {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -639,18 +492,22 @@
     text-align: left;
     background-image: url(../dealers-drinks-images/entramado.jpg);
 }
+
 #vodka img {
     padding-top: 0.5rem;
     width: 100%;
 }
+
 #vodka ul {
     list-style-type: none;
     margin-left: 5rem;
-  }
-  #vodka ul li {
-      padding: 0.3rem;
-  }
-  #ron-lista {
+}
+
+#vodka ul li {
+    padding: 0.3rem;
+}
+
+#ron-lista {
     height: 4rem;
     margin-top: 3rem;
     padding: 0.5rem;
@@ -660,6 +517,7 @@
     color: #a28e58;
     text-align: center;
 }
+
 #ron {
     height: 30rem;
     overflow: hidden;
@@ -673,18 +531,22 @@
     text-align: left;
     background-image: url(../dealers-drinks-images/entramado.jpg);
 }
+
 #ron img {
     padding-top: 1rem;
     width: 100%;
 }
+
 #ron ul {
     padding-top: 8rem;
     list-style-type: none;
     margin-left: 5rem;
 }
-#ron ul li{
+
+#ron ul li {
     padding: 1rem;
 }
+
 #varios-lista {
     height: 4rem;
     margin: 3rem 0 3rem 0;
@@ -695,6 +557,7 @@
     color: #a28e58;
     text-align: center;
 }
+
 #varios {
     width: 100%;
     display: grid;
@@ -705,16 +568,19 @@
     text-align: left;
     background-image: url(../dealers-drinks-images/entramado.jpg);
 }
+
 #varios img {
     padding-top: 0.5rem;
     width: 100%;
 }
+
 #varios ul {
     padding-top: 1rem;
     padding-bottom: 1rem;
     list-style-type: none;
     margin-left: 5rem;
-} 
+}
+
 #varios ul li {
     padding: 0.15rem;
 }
@@ -728,21 +594,25 @@
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
+
 .efemerides h1 {
     padding-top: 1rem;
     font-size: 3rem;
     text-transform: uppercase;
 }
+
 #fechas--importantes {
     font-size: 1.5rem;
     padding-bottom: 3rem;
 }
+
 .fechas {
     font-family: 'Lato', sans-serif;
     background-image: url(../dealers-drinks-images/entramado.jpg);
     text-align: center;
     padding-bottom: 2rem;
 }
+
 .fechas h2 {
     height: 2.5rem;
     font-size: 2rem;
@@ -751,16 +621,19 @@
     text-align: center;
     font-weight: bolder;
 }
+
 .fechas h3 {
     padding: 0.5rem;
     font-size: 1.5rem;
 }
-.fechas p{
+
+.fechas p {
     padding-bottom: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
 }
-.piepag__fechas .container{
+
+.piepag__fechas .container {
     height: 10rem;
     padding: 0;
     display: flex;
@@ -771,10 +644,12 @@
     overflow: hidden;
     background-color: #212128;
 }
+
 .piepag__fechas .container h3 {
     height: auto;
     text-transform: uppercase;
     color: #a28e58;
     font-weight: bolder;
 }
-/*Inicio estilos efemérides*/
+
+/*Fin estilos efemérides*/
